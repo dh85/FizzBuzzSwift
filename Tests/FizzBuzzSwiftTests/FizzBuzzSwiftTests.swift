@@ -13,4 +13,8 @@ final class FizzBuzzSwiftTests: XCTestCase {
             XCTAssertEqual(fizzBuzz(input: input), output)
         }
     }
+
+    func testNumberThatIsDivisibleByThreeReturnsFizz() {
+        [3, 6, 12].forEach { XCTAssertEqual(fizzBuzz(input: $0), "Fizz") }
+    }
 }

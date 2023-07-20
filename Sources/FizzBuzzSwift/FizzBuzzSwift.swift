@@ -1,3 +1,6 @@
 func fizzBuzz(input: Int) -> String {
-    String(input)
+    if input.isMultiple(of: 3) {
+        return "Fizz"
+    }
+    return String(input)
 }
