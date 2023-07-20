@@ -3,15 +3,7 @@ import XCTest
 
 final class FizzBuzzSwiftTests: XCTestCase {
     func testNumberThatDoesntDivideByThreeOrFiveReturnsItself() {
-        let tests = [
-            (1, "1"),
-            (2, "2"),
-            (7, "7")
-        ]
-
-        tests.forEach { input, output in
-            XCTAssertEqual(fizzBuzz(input: input), output)
-        }
+        [1, 2, 7].forEach {  XCTAssertEqual(fizzBuzz(input: $0), String($0)) }
     }
 
     func testNumberThatIsDivisibleByThreeReturnsFizz() {
