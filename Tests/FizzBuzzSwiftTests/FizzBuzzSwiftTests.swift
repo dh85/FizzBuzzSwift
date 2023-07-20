@@ -13,4 +13,8 @@ final class FizzBuzzSwiftTests: XCTestCase {
     func testNumberThatIsDivisbleByFiveReturnsBuzz() {
         [5, 10, 20].forEach { XCTAssertEqual(fizzBuzz(input: $0), "Buzz") }
     }
+
+    func testNumberThatIsDivisbleByThreeAndFiveReturnsFizzBuzz() {
+        [15, 30, 45].forEach { XCTAssertEqual(fizzBuzz(input: $0), "FizzBuzz") }
+    }
 }
